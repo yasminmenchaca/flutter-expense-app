@@ -18,13 +18,13 @@ class _UserTransactionState extends State<UserTransaction> {
     ),
     Transaction(
       id: '2',
-      title: 'Sony Headphones',
+      title: 'Item 1',
       amount: 43.23,
       date: DateTime.now(),
     ),
     Transaction(
       id: '3',
-      title: 'Sony Headphones',
+      title: 'Item 2',
       amount: 43.23,
       date: DateTime.now(),
     ),
@@ -36,25 +36,25 @@ class _UserTransactionState extends State<UserTransaction> {
     ),
     Transaction(
       id: '5',
-      title: 'Sony',
+      title: 'Item 3',
       amount: 33.23,
       date: DateTime.now(),
     ),
     Transaction(
       id: '6',
-      title: 'Sony Headphones',
+      title: 'Item 4',
       amount: 43.23,
       date: DateTime.now(),
     ),
     Transaction(
       id: '7',
-      title: 'Sony Headphones',
+      title: 'Item 5',
       amount: 43.23,
       date: DateTime.now(),
     ),
     Transaction(
       id: '8',
-      title: 'Sony Headphones',
+      title: 'Item 6',
       amount: 43.23,
       date: DateTime.now(),
     )
