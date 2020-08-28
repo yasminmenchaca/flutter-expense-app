@@ -21,6 +21,42 @@ class _UserTransactionState extends State<UserTransaction> {
       title: 'Sony Headphones',
       amount: 43.23,
       date: DateTime.now(),
+    ),
+    Transaction(
+      id: '3',
+      title: 'Sony Headphones',
+      amount: 43.23,
+      date: DateTime.now(),
+    ),
+    Transaction(
+      id: '4',
+      title: 'Headphones',
+      amount: 3.23,
+      date: DateTime.now(),
+    ),
+    Transaction(
+      id: '5',
+      title: 'Sony',
+      amount: 33.23,
+      date: DateTime.now(),
+    ),
+    Transaction(
+      id: '6',
+      title: 'Sony Headphones',
+      amount: 43.23,
+      date: DateTime.now(),
+    ),
+    Transaction(
+      id: '7',
+      title: 'Sony Headphones',
+      amount: 43.23,
+      date: DateTime.now(),
+    ),
+    Transaction(
+      id: '8',
+      title: 'Sony Headphones',
+      amount: 43.23,
+      date: DateTime.now(),
     )
   ];
 
