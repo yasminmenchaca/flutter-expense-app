@@ -23,7 +23,8 @@ class _NewTransactionState extends State<NewTransaction> {
     }
 
     widget.addTx(enteredTitle, enteredAmount); // access to connected widget
-    Navigator.of(context).pop(); // allows user to hit "done" on their keyboard and the transaction be added
+    Navigator.of(context)
+        .pop(); // allows user to hit "done" on their keyboard and the transaction be added
   }
 
   @override
@@ -50,9 +51,25 @@ class _NewTransactionState extends State<NewTransaction> {
               onSubmitted: (_) => submitData(),
               // onChanged: (val) => amountInput = val,
             ),
-            FlatButton(
+            Container(
+              height: 70,
+              child: Row(
+                children: [
+                  Text('No Date Chosen'),
+                  FlatButton(
+                      textColor: Theme.of(context).primaryColor,
+                      onPressed: () {},
+                      child: Text(
+                        'Choose Date',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      )),
+                ],
+              ),
+            ),
+            RaisedButton(
               child: Text('Add Transaction'),
-              textColor: Colors.purple,
+              color: Theme.of(context).primaryColor,
+              textColor: Theme.of(context).textTheme.button.color,
               onPressed: submitData,
             ),
           ],
