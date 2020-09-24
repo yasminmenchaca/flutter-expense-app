@@ -56,11 +56,11 @@ class _MyHomePageState extends State<MyHomePage> {
     }).toList(); // only transactions that are younger than 7 days are included here
   }
 
-  void _addNewTransaction(String txTitle, double txAmount) {
+  void _addNewTransaction(String txTitle, double txAmount, DateTime choosenDate) {
     final newTx = Transaction(
         title: txTitle,
         amount: txAmount,
-        date: DateTime.now(),
+        date: choosenDate,
         id: DateTime.now().toString());
 
     setState(() {
