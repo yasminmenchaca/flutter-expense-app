@@ -16,14 +16,18 @@ class _NewTransactionState extends State<NewTransaction> {
   DateTime _selectedDate;
 
   void _submitData() {
+    if (_amountController.text.isEmpty) {
+      return;
+    }
     final enteredTitle = _titleController.text;
     final enteredAmount = double.parse(_amountController.text);
 
-    if (enteredTitle.isEmpty || enteredAmount <= 0) {
+    if (enteredTitle.isEmpty || enteredAmount <= 0 || _selectedDate == null) {
       return; // stops function execution
     }
 
-    widget.addTx(enteredTitle, enteredAmount); // access to connected widget
+    widget.addTx(enteredTitle, enteredAmount,
+        _selectedDate); // access to connected widget
     Navigator.of(context)
         .pop(); // allows user to hit "done" on their keyboard and the transaction be added
   }
